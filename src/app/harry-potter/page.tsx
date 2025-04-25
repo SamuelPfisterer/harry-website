@@ -15,7 +15,7 @@ export default function HarryPotter() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-black">
       <img 
-        src="https://static.wikia.nocookie.net/emmapedia/images/5/5d/Hp1.jpg/revision/latest?cb=20150501075907"
+        src="https://jyrujzmpicrqjcdwfwwr.supabase.co/storage/v1/object/public/anna//Hp1%201000x1500.webp"
         alt="Harry Potter"
         className="w-full h-screen object-contain"
         style={{ userSelect: 'none', pointerEvents: 'none' }}
