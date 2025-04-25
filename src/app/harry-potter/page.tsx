@@ -16,12 +16,23 @@ export default function HarryPotter() {
       })
     }
 
+    // Play on mount and pathname change
     playAudio()
+
+    // Also play on page visibility change (handles reload and tab focus)
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        playAudio()
+      }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange)
 
     // Clean up function
     return () => {
       audio.pause()
       audio.remove()
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
   }, [pathname]) // Re-run effect when pathname changes
 
