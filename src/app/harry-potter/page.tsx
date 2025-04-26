@@ -29,23 +29,12 @@ export default function HarryPotter() {
 
       {/* Content container */}
       <div className="relative z-20 min-h-screen flex flex-col items-center justify-center px-4">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 animate-fade-in">
-            Für Anna ❤️
-          </h1>
-          <p className="text-xl text-white/90">Von Harry Potter</p>
-        </div>
-        
         <button
           onClick={playAudio}
-          className="group relative px-8 py-4 bg-white/90 hover:bg-white transition-all duration-300 
-                   rounded-2xl shadow-2xl hover:shadow-3xl backdrop-blur-sm 
-                   transform hover:scale-105 active:scale-95"
+          aria-label="Play message"
+          className="group relative flex items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-white/80 hover:bg-white transition-all duration-300 rounded-full shadow-2xl hover:shadow-3xl backdrop-blur-sm transform hover:scale-110 active:scale-95 border-4 border-blue-300/60"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-purple-200 opacity-0 
-                        group-hover:opacity-10 rounded-2xl transition-opacity duration-300" />
-          <p className="text-xl font-semibold text-gray-800 mb-1">Hallo Anna! ⚡ ❤️</p>
-          <p className="text-lg text-gray-600">Ich habe eine magische Nachricht für dich. Klick mich!</p>
+          <span className="text-5xl md:text-6xl animate-float select-none">❤️</span>
         </button>
       </div>
     </main>
