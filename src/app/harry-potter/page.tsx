@@ -28,7 +28,7 @@ export default function HarryPotter() {
       />
 
       {/* Content container */}
-      <div className="relative z-20 min-h-screen flex flex-col items-center justify-center px-4">
+      <div className="relative z-20 min-h-screen flex flex-col items-center px-4" style={{ paddingTop: '66vh' }}>
         <button
           onClick={playAudio}
           aria-label="Play message"
